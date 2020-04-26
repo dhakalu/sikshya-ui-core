@@ -6,6 +6,8 @@ export default {
   secondary: '#455a64',
   secondaryDark: '#1c313a',
   secondaryLight: '#718792',
+  surfaceColor: '#ffffff',
+  backgroundColor: '#f0f2f5',
   textOnPrimary: '',
   textOnSecondary: ''
 }
