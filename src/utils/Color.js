@@ -10,15 +10,25 @@ export default {
   backgroundColor: '#f0f2f5',
   textOnPrimary: '',
   textOnSecondary: '',
+  transparent: 'transparent',
+
+  defaultButtonText: '#050505',
+  defaultButtonBackground: '#e4e6eb',
+
+  // BLUE
+  blue100: 'rgb(130, 216, 255)',
+  blue130: 'rgb(17, 136, 193)',
+  blue170: '#1877f2',
 
   // RED
   red30: '#F4C5C5',
   red70: '#E47979',
+  red100: '#c00',
   red130: '#BF1616',
   red150: '#A10B0B',
 
   // white
-  white: '#fffff',
+  white: '#fff',
 
   // Gray
   grey5: '#F2F3F4',

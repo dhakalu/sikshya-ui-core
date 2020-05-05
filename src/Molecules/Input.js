@@ -12,10 +12,7 @@ const Input = props => {
     hasError,
     disabled = false,
     errorMessage = '',
-    placeholder = '',
-    size = 'medium',
     validator,
-    value = '',
     regex = '',
     onChange = () => false
   } = props
