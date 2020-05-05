@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 export default {
   // FOnt size
   bold: css`font-weight 600;`,
-  samllSize7: css`font-size: 7px`,
+  samllSize7: css`font-size: 7px;`,
   smallSize8: css`font-size: 8px`,
   smallSize9: css`font-size: 9px`,
   smallSize10: css`font-size: 10px`,
@@ -14,6 +14,10 @@ export default {
   largeSize: css`font-size: 15px`,
   extraLargeSize: css`font-size: 16px`,
   smallHeadingSize: css`font-size: 20px`,
-  headingSize: css`font-size: 30px`
+  headingSize: css`font-size: 30px`,
+
+  uppercase: css`text-transform: uppercase;`,
+
+  paddingHorizontal: css`padding: 0 1em`
   // line heights
 }
