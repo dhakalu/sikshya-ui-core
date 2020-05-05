@@ -6,6 +6,9 @@ This is react component library. This project was created using `neutrinojs`.
 
 We will be using [Atomic Design Pattern](https://bradfrost.com/blog/post/atomic-web-design/)
 
+### Helful links
+[Designing Efficient Web Form](https://www.smashingmagazine.com/2017/06/designing-efficient-web-forms/)
+
 ## Branching Strategy
 
 * Master: Code that is running in production
@@ -31,9 +34,12 @@ A new branch must be created for each fixes we do. If we are fixing bug that exi
 ### Releases
 
 When a group of `features/` are merged to develop and QA verifies the features, the `develop` branch can be merged to `release/<version>`. After code gets merged to `release` branch UAT testing can be done. After UAT verifies the items in `release` branch are working as expected, the `release` branch gets merged into both `develop` and `master`
- 
+
 ### Peer Review
 
 In order to make peer reviews effective, each merge/pull request must small.
 If a *feature* is too big it needs to be splitted into smaller *sub-features*.
 
+## Documenation
+
+We will be using storybooks to document the components
