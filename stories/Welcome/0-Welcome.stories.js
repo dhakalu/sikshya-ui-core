@@ -1,7 +1,7 @@
-import React from 'react';
-import { linkTo } from '@storybook/addon-links';
+import React from 'react'
+import { linkTo } from '@storybook/addon-links'
 import Releases from './Releases'
-import { withInfo } from '@storybook/addon-info';
+import { withInfo } from '@storybook/addon-info'
 
 const info = {
   text: `
@@ -19,4 +19,4 @@ export default {
   ]
 }
 
-export const AllReleases = () => <Releases showApp={linkTo('Button')} />;
+export const AllReleases = () => <Releases showApp={linkTo('Button')} />

@@ -1,7 +1,7 @@
 import { css } from 'styled-components'
 
 export default {
-    // FOnt size
+  // FOnt size
   bold: css`font-weight 600;`,
   samllSize7: css`font-size: 7px`,
   smallSize8: css`font-size: 8px`,
@@ -15,5 +15,5 @@ export default {
   extraLargeSize: css`font-size: 16px`,
   smallHeadingSize: css`font-size: 20px`,
   headingSize: css`font-size: 30px`
-  // line heights 
+  // line heights
 }
