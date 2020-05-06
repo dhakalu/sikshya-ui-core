@@ -7,10 +7,18 @@ const Button = (props) => {
     name = '',
     // size = 'small',
     buttonType = 'standard',
+    disabled = false,
     onClick = () => false
   } = props
 
-  return <StyledButton buttonType={buttonType} onClick={onClick}> {name}</StyledButton>
+  const handleClick = (event) => {
+    if (!disabled) onClick(event)
+  }
+
+  return <StyledButton
+  buttonType={buttonType}
+  onClick={handleClick}
+  disabled={disabled}> {name}</StyledButton>
 }
 
 export default Button
@@ -27,5 +35,7 @@ Button.propTypes = {
   /** The function that gets called when user cliks on the button */
   onClick: PropTypes.func.isRequired,
   /** The label that appers on the button */
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  /** Disables the button */
+  disabled: PropTypes.bool
 }
