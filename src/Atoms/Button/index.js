@@ -1,4 +1,4 @@
-import StyledButton from './styles'
+import StyledButton, { BUTTON_TYPES } from './styles'
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -15,13 +15,6 @@ const Button = (props) => {
 
 export default Button
 
-export const BUTTON_TYPES = {
-  destroyed: 'destroyed',
-  diminished: 'diminished',
-  primary: 'primary',
-  secondaryReverse: 'secondaryReverse',
-  secondary: 'secondary'
-}
 
 Button.propTypes = {
   /** The type of button being used. This determines the styling of the buttons */
