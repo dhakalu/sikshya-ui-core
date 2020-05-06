@@ -1,13 +1,22 @@
 # Sikshya UI Core
 
-This is react component library. This project was created using `neutrinojs`.
+This is react component library. This project was created using `neutrinojs`. React is frontend library that helps to create fast and efficeient web applications.
 
 ## Design Patterns
 
 We will be using [Atomic Design Pattern](https://bradfrost.com/blog/post/atomic-web-design/)
 
 ### Helful links
+
 [Designing Efficient Web Form](https://www.smashingmagazine.com/2017/06/designing-efficient-web-forms/)
+
+### Running in local
+
+* Make sure `git` and `NodeJS v12.16.1+` is installed on the machine.
+* Clone this repo using the command `git clone https://github.com/dhakalu/sikshya-ui-core.git`
+* This project uses `yarn` as the packaging library. hence install yarn globally using command `npm i -g yarn`
+* Once `yarn` is installed, `cd` to the root directory of this project and type `yarn` and enter from terminal. This will download all the dependencies that are needed to run the application
+* Once dependencies are installed, you can use the command `yarn run storybook` to run the story book and test the things that you are developing  
 
 ## Branching Strategy
 
