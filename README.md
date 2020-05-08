@@ -30,11 +30,18 @@ The default branch for this project is `develop`. This branch is proteded and wo
 ### features
 
 ```bash
-git checkout -b feature/SIK-1-button-componet 
+# switch to develop if you are in any other branch
+git checkout develop
+
+# Make sure you have the latest code from develop branch before you create feature
+git pull
+
+# Create a new feature branch that you can work on
+git checkout -b feature/SIK-1-button-componet
 
 ```
 
-A new branch must be created from `develop` branch for any new feature requested/added. A `pull/merge` request must be created when the code in `feature` is ready to merge  to `develop` branch. Test cases must be created on the `feature` branch for any new changes made on that branch. Testing must be run and pass in `feature` branch before making a `pull` request. Once the development for the `feature` completes and the code gets merged to develop, the `feature` branch must be deleted. Each *feature* branch will start with `feature/`
+A new branch must be created from `develop` branch for any new feature requested/added. Please make sure you have the latest version of `develop` before you start to create any `feature` branch. A `pull/merge` request must be created when the code in `feature` is ready to merge  to `develop` branch. Test cases must be created on the `feature` branch for any new changes made on that branch. Testing must be run and pass in `feature` branch before making a `pull` request. Once the development for the `feature` completes and the code gets merged to develop, the `feature` branch must be deleted. Each *feature* branch will start with `feature/`
 
 ### Bugs/Fixes
 
