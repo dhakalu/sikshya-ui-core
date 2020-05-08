@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Borders from '../../utils/Borders'
-import Colors from '../../utils/Color'
+import Borders from '../../../utils/Borders'
+import Colors from '../../../utils/Color'
 
 const inputSizes = {
   small: 20,

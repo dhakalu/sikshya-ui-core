@@ -1,5 +1,5 @@
 import React from 'react'
-import Input from '../../../src/Molecules/Input'
+import Input from '../../../src/components/Molecules/Input'
 import { withInfo } from '@storybook/addon-info'
 
 export default { title: 'Molecules/Input', decorators: [withInfo] }

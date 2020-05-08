@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Colors from '../../utils/Color'
+import Colors from '../../../utils/Color'
 
-import Typography from '../../utils/Typography'
+import Typography from '../../../utils/Typography'
 export const BUTTON_TYPES = {
   destroyed: 'destroyed',
   diminished: 'diminished',

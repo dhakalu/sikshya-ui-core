@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Colors from '../../utils/Color'
+import Colors from '../../../utils/Color'
 
 export default styled.div`
     position: relative;

@@ -1,4 +1,4 @@
-import Toggle from '../../../../src/Atoms/Toggle'
+import Toggle from '../../../../src/components/Atoms/Toggle'
 import { withInfo } from '@storybook/addon-info'
 import React from 'react'
 

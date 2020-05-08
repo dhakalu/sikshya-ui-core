@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Colors from '../../utils/Color'
-import Typography from '../../utils/Typography'
+import Colors from '../../../utils/Color'
+import Typography from '../../../utils/Typography'
 
 export const StyledLabel = styled.label`
     display: block;

@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../../../src/Atoms/Button'
-import { BUTTON_TYPES } from '../../../src/Atoms/Button/styles'
+import Button from '../../../src/components/Atoms/Button'
+import { BUTTON_TYPES } from '../../../src/components/Atoms/Button/styles'
 import { withInfo } from '@storybook/addon-info'
 
 export default { title: 'Atoms/Button', decorators: [withInfo] }
