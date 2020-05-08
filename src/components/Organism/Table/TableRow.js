@@ -35,5 +35,5 @@ TableRow.propTypes = {
   /** Record that represents the row */
   record: PropTypes.object,
   /** The dataName/columnName that can uniquely idenify a record */
-  selectionKey: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  selectionKey: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }

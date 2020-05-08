@@ -25,8 +25,8 @@ const records = [
   }
 ]
 
-describe('Makes sure the table component works as expected', () => {
-  test('Table cell renders properly', () => {
+describe('Table', () => {
+  test('Table cell shows data', () => {
     const { getByText } = render(
       <table>
         <tbody>
