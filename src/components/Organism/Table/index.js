@@ -20,7 +20,7 @@ const Table = (props) => {
                 key={record[selectionKey] || index}
                 columns={columns}
                 record={record}
-                onRowClick={() => onRowClick(record, index)}
+                onRowClick={(record) => onRowClick(record, index)}
               />
             )
           })

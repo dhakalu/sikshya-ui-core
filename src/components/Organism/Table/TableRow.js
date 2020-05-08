@@ -6,11 +6,16 @@ const TableRow = (props) => {
   const {
     columns = [],
     record = {},
-    selectionKey = ''
+    selectionKey = '',
+    onRowClick
   } = props
 
+  const handleRowClick = () => {
+    onRowClick(record)
+  }
+
   return (
-    <tr>
+    <tr onClick={handleRowClick}>
       {
         columns.map((column, index) => {
           const { dataName } = column
