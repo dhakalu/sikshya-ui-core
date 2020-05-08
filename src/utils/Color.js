@@ -41,7 +41,7 @@ export default {
   grey75: '#6D767E',
   grey100: '#37474F',
 
-  //black
+  // black
   black100: 'rgb(55, 71, 79)',
   black120: 'rgb(15, 15, 89)'
 }

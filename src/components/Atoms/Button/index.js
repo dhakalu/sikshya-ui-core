@@ -15,14 +15,17 @@ const Button = (props) => {
     if (!disabled) onClick(event)
   }
 
-  return <StyledButton
-  buttonType={buttonType}
-  onClick={handleClick}
-  disabled={disabled}> {name}</StyledButton>
+  return (
+    <StyledButton
+      buttonType={buttonType}
+      onClick={handleClick}
+      disabled={disabled}
+    > {name}
+    </StyledButton>
+  )
 }
 
 export default Button
-
 
 Button.propTypes = {
   /** The type of button being used. This determines the styling of the buttons */
