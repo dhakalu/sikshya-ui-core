@@ -56,47 +56,53 @@ export const secondaryReverseButton = () => (
 
 export const basicDisabledButton = () => (
   <Button
-  disabled = {true}
-  onClick={() => window.alert('This should not appear.')}
-  name = 'Click Me!'/>
+    disabled
+    onClick={() => window.alert('This should not appear.')}
+    name='Click Me!'
+  />
 )
 
 export const destroyedDisabledButton = () => (
   <Button
-  disabled = {true}
-  onClick={() => window.alert('This should not appear.')}
-  buttonType = {BUTTON_TYPES.destroyed}
-  name = 'Click Me!'/>
+    disabled
+    onClick={() => window.alert('This should not appear.')}
+    buttonType={BUTTON_TYPES.destroyed}
+    name='Click Me!'
+  />
 )
 
 export const diminishedDisabledButton = () => (
   <Button
-  disabled = {true}
-  onClick={() => window.alert('This should not appear.')}
-  buttonType = {BUTTON_TYPES.diminished}
-  name = 'Click Me!'/>
+    disabled
+    onClick={() => window.alert('This should not appear.')}
+    buttonType={BUTTON_TYPES.diminished}
+    name='Click Me!'
+  />
 )
 
 export const primaryDisabledButton = () => (
   <Button
-  disabled = {true}
-  onClick={() => window.alert('This should not appear.')}
-  buttonType = {BUTTON_TYPES.primary}
-  name = 'Click Me!'/>
+    disabled
+    onClick={() => window.alert('This should not appear.')}
+    buttonType={BUTTON_TYPES.primary}
+    name='Click Me!'
+  />
 )
 
 export const secondaryDisabledButton = () => (
   <Button
-  disabled = {true}
-  onClick = {() => window.alert('This should not appear.')}
-  buttonType = {BUTTON_TYPES.secondary}
-  name = 'Click Me!'/>
+    disabled
+    onClick={() => window.alert('This should not appear.')}
+    buttonType={BUTTON_TYPES.secondary}
+    name='Click Me!'
+  />
 )
 
 export const secondaryReverseDisabledButton = () => (
   <Button
-  disabled = {true}
-  onClick = {() => window.alert('This should not appear.')}
-  buttonType = {BUTTON_TYPES.secondaryReverse}
-  name = 'Click Me!'/>
+    disabled
+    onClick={() => window.alert('This should not appear.')}
+    buttonType={BUTTON_TYPES.secondaryReverse}
+    name='Click Me!'
+  />
 )
