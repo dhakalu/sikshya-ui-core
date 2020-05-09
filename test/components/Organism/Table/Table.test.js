@@ -40,6 +40,16 @@ describe('Table', () => {
     expect(linkElement).toBeInTheDocument()
   })
 
+  test('Table renders header properly', () => {
+    const { getByText } = render(
+      <Table columns={columns} records={records} />
+    )
+    let linkElement = getByText(/Name/)
+    expect(linkElement).toBeInTheDocument()
+    linkElement = getByText(/Email/)
+    expect(linkElement).toBeInTheDocument()
+  })
+
   test('Renders Table Row Properly', () => {
     const { getByText } = render(
       <table>
@@ -69,6 +79,20 @@ describe('Table', () => {
     expect(onRowClick).toHaveBeenCalledTimes(2)
     expect(onRowClick).toHaveBeenNthCalledWith(1, records[0], 0)
     expect(linkElement).toBeInTheDocument()
+  })
+
+  test('Make sure when you hover over to clickable row, row gets the class `clickable`', () => {
+    const onRowClick = jest.fn()
+    const { getByRole } = render(
+      <table>
+        <tbody>
+          <TableRow columns={columns} record={records[0]} onRowClick={onRowClick} />
+        </tbody>
+      </table>
+    )
+    const linkElement = getByRole('button')
+    expect(linkElement).toBeInTheDocument()
+    expect(linkElement).toHaveClass('clickable')
   })
 
   test('Renders the table properly', () => {

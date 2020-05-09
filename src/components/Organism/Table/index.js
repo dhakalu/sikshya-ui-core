@@ -1,32 +1,36 @@
 
 import React from 'react'
 import TableRow from './TableRow'
+import Header from './TableHeader'
+import StyledTableWrapper from './Styles.TableWrapper'
 
 const Table = (props) => {
   const {
     columns = [],
     records = [],
     selectionKey = '',
-    onRowClick = () => false
+    onRowClick
   } = props
 
   return (
-    <table>
+    <StyledTableWrapper>
       <tbody>
+        <Header columns={columns} />
         {
           records.map((record, index) => {
             return (
               <TableRow
+                dataIndex={index}
                 key={record[selectionKey] || index}
                 columns={columns}
                 record={record}
-                onRowClick={(record) => onRowClick(record, index)}
+                onRowClick={onRowClick}
               />
             )
           })
         }
       </tbody>
-    </table>
+    </StyledTableWrapper>
   )
 }
 

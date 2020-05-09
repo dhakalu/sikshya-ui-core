@@ -34,7 +34,7 @@ const StyledButton = styled.button`
     ${Typography.uppercase};
     ${Typography.bold};
     letter-spacing: 0.05em;
-    border-radius: 5px;
+    border-radius: 3px;
     background: ${props => backgrounColors[props.buttonType] || Colors.defaultButtonBackground};
     cursor: pointer;
     ${props => props.buttonType === BUTTON_TYPES.secondaryReverse && `border: 1.5px solid ${Colors.defaultButtonText}`};

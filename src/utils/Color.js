@@ -11,7 +11,6 @@ export default {
   textOnPrimary: '',
   textOnSecondary: '',
   transparent: 'transparent',
-
   defaultButtonText: '#050505',
   defaultButtonBackground: '#e4e6eb',
 
@@ -29,6 +28,7 @@ export default {
 
   // white
   white: '#fff',
+  whiteF0: '#f0f0f0f0',
 
   // Gray
   grey5: '#F2F3F4',

@@ -4,18 +4,26 @@ import PropTypes from 'prop-types'
 
 const TableRow = (props) => {
   const {
+    dataIndex,
     columns = [],
     record = {},
     selectionKey = '',
+    className = '',
     onRowClick
   } = props
 
   const handleRowClick = () => {
-    onRowClick(record)
+    onRowClick && onRowClick(record, dataIndex)
+  }
+
+  let classNames
+
+  if (onRowClick) {
+    classNames = `clickable ${className}`
   }
 
   return (
-    <tr onClick={handleRowClick}>
+    <tr onClick={handleRowClick} className={classNames} role={onRowClick ? 'button' : ''}>
       {
         columns.map((column, index) => {
           const { dataName } = column
@@ -40,5 +48,7 @@ TableRow.propTypes = {
   /** Record that represents the row */
   record: PropTypes.object,
   /** The dataName/columnName that can uniquely idenify a record */
-  selectionKey: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+  selectionKey: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /** Function that gets called when user clicks on the row */
+  onRowClick: PropTypes.func
 }
